@@ -1,0 +1,23 @@
+{
+  "name": "lp2020_pr1",
+  "version": "1.0.0",
+  "description": "liteProject",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeonidWebDev/lp2020_pr1.git"
+  },
+  "author": "Leo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LeonidWebDev/lp2020_pr1/issues"
+  },
+  "homepage": "https://github.com/LeonidWebDev/lp2020_pr1#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0"
+  }
+}
