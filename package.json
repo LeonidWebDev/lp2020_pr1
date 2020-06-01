@@ -17,10 +17,11 @@
     },
     "homepage": "https://github.com/LeonidWebDev/lp2020_pr1#readme",
     "devDependencies": {
+        "browser-sync": "^2.26.7",
+        "del": "^5.1.0",
         "gulp": "^4.0.2",
         "gulp-autoprefixer": "^7.0.1",
         "gulp-htmlmin": "^5.0.1",
-        "del": "^5.1.0",
         "gulp-sass": "^4.1.0"
     },
     "dependencies": {
