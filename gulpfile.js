@@ -19,8 +19,12 @@ function css() {
         .pipe(dest('app/css/'));
 }
 
-function clean() {
-    return del(['app/index.html', 'app/css/**/*.css'])
+function clearHtml() {
+    return del(['app/index.html'])
+}
+
+function clearCss() {
+    return del(['app/css/**/*.css'])
 }
 
 function serve() {
@@ -28,14 +32,15 @@ function serve() {
         server: './app'
     })
 
-    watch('app/index.html', series(html)).on('change', sync.reload)
-    watch('dist/scss/style.scss', series(css)).on('change', sync.reload)
+    watch('dist/index.html', series(clearHtml, html)).on('change', sync.reload)
+    watch('dist/scss/style.scss', series(clearCss, css)).on('change', sync.reload)
 
 }
 
 exports.html = html;
 exports.css = css;
-exports.clean = clean;
+exports.clearCss = clearCss;
+exports.clearHtml = clearHtml;
 
-exports.build = series(clean, html, css);
-exports.serve = series(clean, html, css, serve);
+exports.build = series(clearHtml, clearCss, html, css);
+exports.serve = series(serve);

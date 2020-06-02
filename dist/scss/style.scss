@@ -1,10 +1,14 @@
 @import 'normalize';
-body {
-    background-color: #3333ff;
+* {
+    box-sizing: border-box;
 }
 
-body a {
-    text-decoration: none;
-    padding-left: 30px;
-    position: relative;
+.container {
+    margin: 0 auto;
+    max-width: 800px;
+    width: 100%;
+}
+
+body {
+    background-color: #292c34;
 }
