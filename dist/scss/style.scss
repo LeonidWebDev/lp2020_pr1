@@ -56,6 +56,7 @@ body {
 .header-content__discription {
     font-size: 15px;
     color: #24242c;
+    margin-bottom: 40px;
 }
 
 .header-content__btn {
@@ -66,5 +67,91 @@ body {
     border: 1px solid #ffffff;
     border-radius: 5px;
     padding: 15px 35px;
+    padding-right: 40px;
     text-decoration: none;
+    position: relative;
+    &::after {
+        content: '>';
+        position: absolute;
+        right: 25px;
+        top: 52%;
+        transform: translateY(-50%)
+    }
+}
+
+.section-offer {}
+
+.container {}
+
+.offer-wrapper {
+    padding: 25px 0px;
+    background-color: #fff;
+}
+
+.offer-list {
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    list-style: none;
+    margin: -5px 0px;
+}
+
+.offer-item {
+    text-align: left;
+    max-width: 190px;
+    margin: 0px 5px;
+}
+
+.offer-item__img {
+    width: 190px;
+    min-height: 150px;
+    background-color: #24242c;
+    margin-bottom: 20px;
+}
+
+.offer-item__title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #24242c;
+    margin-bottom: 15px;
+}
+
+.offer-item__place {
+    font-size: 13px;
+    color: #a5a7a8;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    &::before {
+        position: absolute;
+        content: "";
+        left: 0px;
+        width: 9px;
+        height: 12px;
+        background-image: url(../../app/images/mapico.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+
+.offer-item__text {
+    font-size: 13px;
+    color: #97999b;
+    margin-bottom: 25px;
+}
+
+.offer-item__price {
+    font-size: 20px;
+    font-weight: 600;
+    color: #24242c;
+    margin-bottom: 15px;
+}
+
+.offer-item__btn {
+    font-size: 13px;
+    font-weight: 600;
+    color: #ffb600;
+    background-color: #24242c;
+    padding: 10px 20px;
+    border-radius: 5px;
 }
