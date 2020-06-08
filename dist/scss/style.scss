@@ -1,7 +1,13 @@
 @import 'normalize';
 @import 'font';
-* {
+html {
     box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
 }
 
 .container {
@@ -109,14 +115,16 @@ body {
     margin-bottom: 20px;
 }
 
-.offer-item__title {
+.offer-item__title,
+.offer-block-item__title {
     font-size: 20px;
     font-weight: 600;
     color: #24242c;
     margin-bottom: 15px;
 }
 
-.offer-item__place {
+.offer-item__place,
+.offer-block-item__place {
     font-size: 13px;
     color: #a5a7a8;
     padding-left: 20px;
@@ -134,13 +142,15 @@ body {
     }
 }
 
-.offer-item__text {
+.offer-item__text,
+.offer-block-item__text {
     font-size: 13px;
     color: #97999b;
     margin-bottom: 25px;
 }
 
-.offer-item__price {
+.offer-item__price,
+.offer-block-item__price {
     font-size: 20px;
     font-weight: 600;
     color: #24242c;
@@ -154,4 +164,68 @@ body {
     background-color: #24242c;
     padding: 10px 20px;
     border-radius: 5px;
+}
+
+.watch {}
+
+.watch-content {
+    background-color: #47474e;
+    padding-top: 90px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+.watch__title {
+    font-size: 35px;
+    color: #fff;
+    font-weight: 400;
+    margin-top: 0px;
+    margin-bottom: 25px;
+    & span {
+        color: #f3af05;
+    }
+}
+
+.watch__btn {
+    font-size: 13px;
+    color: #24242c;
+    background-color: #ffb600;
+    padding: 15px 45px 15px 35px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    position: relative;
+    &::after {
+        content: '>';
+        position: absolute;
+        color: #fff;
+        right: 30px;
+        top: 52%;
+        transform: translateY(-50%)
+    }
+}
+
+.offer-block {}
+
+.offer-block-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.offer-block-item {
+    text-align: center;
+    width: 50%;
+    background-color: #fff;
+    padding-top: 85px;
+    padding-bottom: 100px;
+}
+
+.offer-block-inside {
+    text-align: left;
+    display: inline-block;
+    width: 210px;
+}
+
+.offer-block-item__img {
+    width: 50%;
+    background-color: #97999b;
 }
