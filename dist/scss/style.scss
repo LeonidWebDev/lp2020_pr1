@@ -87,8 +87,6 @@ body {
 
 .section-offer {}
 
-.container {}
-
 .offer-wrapper {
     padding: 25px 0px;
     background-color: #fff;
@@ -127,19 +125,12 @@ body {
 .offer-block-item__place {
     font-size: 13px;
     color: #a5a7a8;
-    padding-left: 20px;
     margin-bottom: 20px;
-    position: relative;
-    &::before {
-        position: absolute;
-        content: "";
-        left: 0px;
-        width: 9px;
-        height: 12px;
-        background-image: url(../../app/images/mapico.svg);
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
+}
+
+.icon-location2:before {
+    content: "\e948";
+    font-family: 'icomoon';
 }
 
 .offer-item__text,
@@ -228,4 +219,50 @@ body {
 .offer-block-item__img {
     width: 50%;
     background-color: #97999b;
+}
+
+.footer {}
+
+.footer-inner {
+    background-color: #24242c;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 35px;
+}
+
+.footer-reverved {}
+
+.footer__logo {}
+
+.footer-reserved__text {
+    display: inline-block;
+}
+
+.footer-icons {
+    height: 30px;
+    width: 130px;
+    border: 1px solid red;
+}
+
+.footer-icons__fb {}
+
+.footer-icons__tw {}
+
+.footer-icons__dr {}
+
+.icon-facebook1:before {
+    font-family: 'icomoon';
+    content: "\ea90";
+}
+
+.icon-twitter:before {
+    font-family: 'icomoon';
+    content: "\ea96";
+}
+
+.icon-dribbble:before {
+    font-family: 'icomoon';
+    content: "\eaa7";
 }
