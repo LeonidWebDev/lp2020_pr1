@@ -131,6 +131,8 @@ body {
 .icon-location2:before {
     content: "\e948";
     font-family: 'icomoon';
+    color: #ffb600;
+    margin-right: 5px;
 }
 
 .offer-item__text,
@@ -149,6 +151,7 @@ body {
 }
 
 .offer-item__btn {
+    display: inline-block;
     font-size: 13px;
     font-weight: 600;
     color: #ffb600;
@@ -226,43 +229,59 @@ body {
 .footer-inner {
     background-color: #24242c;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding-top: 20px;
     padding-bottom: 35px;
 }
 
-.footer-reverved {}
+.footer-reverved {
+    margin-left: 110px;
+}
 
 .footer__logo {}
 
 .footer-reserved__text {
     display: inline-block;
+    font-size: 13px;
+    line-height: 13px;
+    letter-spacing: -0.4px;
+    color: #797c82;
+    margin-left: 10px;
+    transform: translateY(-10px);
 }
 
 .footer-icons {
-    height: 30px;
-    width: 130px;
-    border: 1px solid red;
+    display: inline-block;
+    font-size: 13px;
+    line-height: 13px;
+    margin-right: 110px;
 }
 
-.footer-icons__fb {}
+.footer-icons__fb {
+    margin-right: 35px;
+}
 
-.footer-icons__tw {}
+.footer-icons__tw {
+    margin-right: 35px;
+}
 
 .footer-icons__dr {}
 
 .icon-facebook1:before {
     font-family: 'icomoon';
     content: "\ea90";
+    color: #fff;
 }
 
 .icon-twitter:before {
     font-family: 'icomoon';
     content: "\ea96";
+    color: #fff;
 }
 
 .icon-dribbble:before {
     font-family: 'icomoon';
     content: "\eaa7";
+    color: #fff;
 }
