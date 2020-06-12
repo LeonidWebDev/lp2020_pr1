@@ -26,10 +26,6 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-.header {}
-
-.container {}
-
 .header-top {
     display: flex;
     justify-content: space-between;
@@ -42,8 +38,6 @@ body {
     display: inline-block;
     margin-left: 95px;
 }
-
-.header-logo {}
 
 .header-top__text {
     display: inline-block;
@@ -92,8 +86,6 @@ body {
         transform: translateY(-50%)
     }
 }
-
-.section-offer {}
 
 .offer-wrapper {
     padding-top: 25px;
@@ -170,8 +162,6 @@ body {
     border-radius: 5px;
 }
 
-.watch {}
-
 .watch-content {
     background-color: #47474e;
     padding-top: 90px;
@@ -208,8 +198,6 @@ body {
     }
 }
 
-.offer-block {}
-
 .offer-block-content {
     display: flex;
     flex-wrap: wrap;
@@ -235,8 +223,6 @@ body {
     background-color: #97999b;
 }
 
-.footer {}
-
 .footer-inner {
     background-color: #24242c;
     display: flex;
@@ -249,8 +235,6 @@ body {
 .footer-reverved {
     margin-left: 95px;
 }
-
-.footer__logo {}
 
 .footer-reserved__text {
     display: inline-block;
