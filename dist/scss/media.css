@@ -1,1 +1,37 @@
-@media (max-width: 1200px) {}
+@media (max-width: 650px) {
+    .offer-block-content div:nth-child(3) {
+        order: 3;
+    }
+    .offer-block-item {
+        width: 100%;
+    }
+    .offer-block-item__img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 520px) {
+    .header-logo-link,
+    .footer-reverved {
+        margin-left: 30px;
+    }
+    .header-top__text,
+    .footer-icons {
+        margin-right: 30px;
+    }
+    .footer-icons__fb {
+        margin-right: 15px;
+    }
+    .footer-icons__tw {
+        margin-right: 15px;
+    }
+}
+
+@media (max-width: 350px) {
+    .footer-icons {
+        margin-right: 10px;
+    }
+    .footer-reverved {
+        margin-left: 10px;
+    }
+}
